@@ -10,19 +10,27 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'OK-ŽALUZIE | Žaluzie a sítě na míru – Moravskoslezský kraj',
+  title: 'OK-ŽALUZIE | Žaluzie a sítě proti hmyzu na míru',
   description:
-    'Montáž, opravy a servis žaluzií a sítí proti hmyzu v Moravskoslezském kraji. Interiérové i exteriérové žaluzie. Nezávazná poptávka zdarma. Tel: +420 773 071 707',
+    'Montáž, opravy a servis žaluzií a sítí proti hmyzu v Jihomoravském kraji. Interiérové i exteriérové žaluzie. Nezávazná poptávka zdarma. Tel: +420 773 071 707',
   keywords:
-    'žaluzie, sítě proti hmyzu, montáž žaluzií, opravy žaluzií, Odry, Nový Jičín, Opava, Moravskoslezský kraj, stínění, rolety',
+    'žaluzie, sítě proti hmyzu, montáž žaluzií, opravy žaluzií, Brno, Jihomoravský kraj, stínění, rolety',
   authors: [{ name: 'DULUX SERVICE s.r.o.' }],
   openGraph: {
     title: 'OK-ŽALUZIE | Žaluzie a sítě na míru',
     description:
-      'Montáž, opravy a servis žaluzií a sítí proti hmyzu v Moravskoslezském kraji. Nezávazná poptávka zdarma.',
+      'Montáž, opravy a servis žaluzií a sítí proti hmyzu v Jihomoravském kraji. Nezávazná poptávka zdarma.',
     locale: 'cs_CZ',
     type: 'website',
     siteName: 'OK-ŽALUZIE',
+    images: [
+      {
+        url: 'images/nahled.webp',
+        width: 800,
+        height: 591,
+        alt: 'OK-ŽALUZIE | Žaluzie a sítě na míru',
+      },
+    ],
   },
   robots: {
     index: true,
