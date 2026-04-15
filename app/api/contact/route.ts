@@ -94,7 +94,7 @@ export async function POST(request: NextRequest) {
   try {
     const resend = new Resend(process.env.RESEND_API_KEY);
     const { error } = await resend.emails.send({
-      from:    'Poptávka OK-ŽALUZIE <info@mail.ok-zaluzie.cz>',
+      from:    'Poptávka OK-ŽALUZIE <info@ok-zaluzie.cz>',
       to:      [CONTACT_EMAIL],
       replyTo: email,
       subject: `Nová poptávka – ${name}`,
