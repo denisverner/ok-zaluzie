@@ -16,6 +16,7 @@ export const metadata: Metadata = {
   keywords:
     'žaluzie, sítě proti hmyzu, montáž žaluzií, opravy žaluzií, Brno, Jihomoravský kraj, stínění, rolety',
   authors: [{ name: 'DULUX SERVICE s.r.o.' }],
+  icons: { icon: '/images/favicon.svg' },
   openGraph: {
     title: 'OK-ŽALUZIE | Žaluzie a sítě na míru',
     description:
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
     siteName: 'OK-ŽALUZIE',
     images: [
       {
-        url: 'images/nahled.webp',
+        url: '/images/nahled.webp',
         width: 800,
         height: 591,
         alt: 'OK-ŽALUZIE | Žaluzie a sítě na míru',

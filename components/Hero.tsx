@@ -3,10 +3,39 @@
 import { trackEvent } from '@/lib/analytics';
 
 const TRUST_ITEMS = [
-  { icon: '✓', text: '10+ let zkušeností' },
-  { icon: '⚡', text: 'Rychlá montáž'      },
-  { icon: '📍', text: 'Jihomoravský kraj'  },
-  { icon: '🔧', text: 'Servis & opravy'    },
+  {
+    icon: (
+      <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24" aria-hidden>
+        <path d="M20 6L9 17l-5-5" strokeLinecap="round" strokeLinejoin="round"/>
+      </svg>
+    ),
+    text: '10+ let zkušeností',
+  },
+  {
+    icon: (
+      <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24" aria-hidden>
+        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" strokeLinecap="round" strokeLinejoin="round"/>
+      </svg>
+    ),
+    text: 'Rychlá montáž',
+  },
+  {
+    icon: (
+      <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24" aria-hidden>
+        <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z" strokeLinecap="round" strokeLinejoin="round"/>
+        <circle cx="12" cy="10" r="3"/>
+      </svg>
+    ),
+    text: 'Jihomoravský kraj',
+  },
+  {
+    icon: (
+      <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24" aria-hidden>
+        <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z" strokeLinecap="round" strokeLinejoin="round"/>
+      </svg>
+    ),
+    text: 'Servis & opravy',
+  },
 ];
 
 export default function Hero() {
@@ -87,7 +116,7 @@ export default function Hero() {
         >
           {TRUST_ITEMS.map(({ icon, text }) => (
             <div key={text} className="flex items-center gap-3">
-              <span className="text-xl" aria-hidden>{icon}</span>
+              <span className="text-accent-600 flex-shrink-0">{icon}</span>
               <span className="text-sm font-medium text-gray-600">{text}</span>
             </div>
           ))}
