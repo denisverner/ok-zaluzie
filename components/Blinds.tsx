@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { trackEvent } from '@/lib/analytics';
 
 const TYPES = [
@@ -42,14 +43,13 @@ export default function Blinds() {
               className={`reveal reveal-delay-${i + 1} bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden hover:shadow-md hover:-translate-y-1 transition-all duration-300`}
             >
               {/* Image */}
-              <div className="w-full h-56 overflow-hidden bg-gray-100">
-                <img
+              <div className="relative w-full h-56 overflow-hidden bg-gray-100">
+                <Image
                   src={img.src}
                   alt={img.alt}
-                  width={640}
-                  height={380}
-                  loading="lazy"
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover transition-transform duration-500 hover:scale-105"
                 />
               </div>
 
