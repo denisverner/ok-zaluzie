@@ -25,7 +25,7 @@ export default function Footer() {
                 OK<span className="text-accent-500">‑ŽALUZIE</span>
               </span>
             </div>
-            <p className="text-sm leading-relaxed text-gray-500 max-w-xs">
+            <p className="text-sm leading-relaxed text-gray-400 max-w-xs">
               Montáž, opravy a servis žaluzií a sítí proti hmyzu v Jihomoravském kraji.
             </p>
           </div>
@@ -69,9 +69,9 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-gray-800 py-5 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-gray-600">
+        <div className="border-t border-gray-800 py-5 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-gray-400">
           <p>© {year} DULUX SERVICE s.r.o. Všechna práva vyhrazena.</p>
-          <a href="/gdpr" className="hover:text-gray-400 transition-colors">
+          <a href="/gdpr" className="hover:text-white transition-colors">
             Ochrana osobních údajů & Cookies
           </a>
         </div>
